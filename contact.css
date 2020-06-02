@@ -25,8 +25,8 @@ header {
     justify-content: center;
     animation-name: logo;
     animation-duration: 5s;  
-  animation-fill-mode: forwards;
-  position: relative;
+    animation-fill-mode: forwards;
+    position: relative;
 }
 
 @keyframes logo {
@@ -36,4 +36,52 @@ header {
 
 .content img {
     width: 70px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 23rem;
+    transition: all 4s ease-in-out;
+    animation-name: form;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes form {
+    from {top: 0px;}
+    to {top: 50px;}
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ff5722;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+::placeholder {
+    color: #ff5722;
+}
+
+form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+input {
+    height: 45px;
 }
